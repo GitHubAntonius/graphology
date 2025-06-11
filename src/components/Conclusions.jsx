@@ -6,7 +6,6 @@ import data_result from "../config/graphology/data_result.json"
 
 import jsPDF from 'jspdf'
 import html2canvas from 'html2canvas'
-import HtmlToRtfBrowser from 'html-to-rtf-browser'
 
 import imgPDF from '../assets/svg/downloadPDF.svg'
 import imgRTF from '../assets/svg/downloadRTF.svg'
@@ -26,10 +25,6 @@ const Conclusions = () => {
     const conclusions = useSelector((state) => state.graphology.conclusions)
 
     const [result, setResult] = useState([])
-
-    // RTF Text
-    const componentRef = useRef(null)
-    const htmlToRtf = new HtmlToRtfBrowser()
 
     // Process Conclusions
     const generateConclusions = (data) => {
@@ -113,6 +108,7 @@ const Conclusions = () => {
 
     // Funtio to handle downloading the HTML as an RTF file
     const handleDownloadRtf = () => {
+        /*
         const htmlContent = componentRef.current.innerHTML
         const rtfContent = htmlToRtf.convertHtmlToRtf(htmlContent)
 
@@ -128,6 +124,7 @@ const Conclusions = () => {
         // Clean up
         document.body.removeChild(link)
         window.URL.revokeObjectURL(url)
+        */
     }
 
     // Function to handle downloading the HTML as a PDF
@@ -200,7 +197,7 @@ const Conclusions = () => {
 
     return (
         <div className={`result-container${pageState === 'conclusion' ? '' : ' hide'}`}>
-            <div id="htmlContent" ref={componentRef} className="result">
+            <div id="htmlContent" className="result">
                 <div className="title">HASIL PENILAIAN</div>
                 <div className="information">
                     <h3>Nama : </h3>
