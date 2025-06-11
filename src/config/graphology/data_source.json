@@ -1,0 +1,236 @@
+{
+  "graphology": {
+    "name": "Graphology",
+    "description": "-",
+    "introduction": "Graphology is the study of handwriting, especially when employed as a means of analyzing character. The theory underlying graphology is that handwriting is an expression of personality,  hence, a systematic analysis of the way words and letters are formed can reveal traits of personality. This test is based on the theory that the way you write can indicate more than 5,000 personality traits. Graphology is a projective technique, which means that the interpretation of drawings, symbols, or handwriting is subjective. The interpretation of the drawings, symbols, or handwriting is based on the examiner's personal experience and understanding of the subject. The interpretation of the drawings, symbols, or handwriting is not based on any scientific evidence or any psychological theory or model.",
+    "form_list": [
+      {
+        "menu": "Motivasi dan Tujuan Kehidupan",
+        "submenu": [
+          {
+            "group": "Tanda-tanda yang menguatkan",
+            "list": [
+              "Keinginan untuk memiliki",
+              "Antusiasme",
+              "Kemampuan imajinasi dan berpikir",
+              "Optimisme",
+              "Teguh dalam mengambil keputusan & bertindak",
+              "Gigih mempertahankan miliknya",
+              "Kemauan kuat"
+            ]
+          },
+          {
+            "group": "Tanda-tanda yang melemahan",
+            "list": [
+              "Pesimis dan berpandangan negatif",
+              "Mudah menyerah"
+            ]
+          }
+        ]
+      },
+      {
+        "menu": "Konsep Diri",
+        "submenu": [
+          {
+            "group": "Tanda-tanda yang menguatkan",
+            "list": [
+              "Mandiri dalam berpikir dan bertindak",
+              "Harga diri positif",
+              "Kepercayaan pada diri sendiri",
+              "Disiplin Diri"
+            ]
+          },
+          {
+            "group": "Tanda-tanda yang melemahan",
+            "list": [
+              "Memandang rendah pada diri sendiri",
+              "Suka menyalahkan diri sendiri - XXX"
+            ]
+          }
+        ]
+      },
+      {
+        "menu": "Hubungan Sosial",
+        "submenu": [
+          {
+            "group": "Tanda-tanda yang menguatkan",
+            "list": [
+              "Menjaga martabat diri",
+              "Murah hati",
+              "Loyal, setia dan mengabdikan diri",
+              "Peduli dan mampu berempati",
+              "Memberikan “ruang” secara proporsional pada orang lain",
+              "Bisa menerima pendapat dan saran orang lain",
+              "Fleksibel"
+            ]
+          },
+          {
+            "group": "Tanda-tanda yang melemahan",
+            "list": [
+              "Agresif dan bersikap memusuhi dan menyerang",
+              "Tidak jujur",
+              "Bossy dan suka mendominasi",
+              "Bermulut pedas",
+              "Suka meninggikan diri (sombong)"
+            ]
+          }
+        ]
+      },
+      {
+        "menu": "Keahlian berkomunikasi",
+        "submenu": [
+          {
+            "group": "Tanda-tanda yang menguatkan",
+            "list": [
+              "Kemauan untuk berkomunikasi",
+              "Diplomatis",
+              "Mudah mengekspresikan pendapat",
+              "Terbuka terhadap pendapat orang lain"
+            ]
+          },
+          {
+            "group": "Tanda-tanda yang melemahan",
+            "list": [
+              "Argumentatif (melawan pendapat orang lain)",
+              "Melebih-lebihkan",
+              "Sarkasme , menggunakan kata-kata pedas",
+              "Suka merahasiakan, menutupi fakta"
+            ]
+          }
+        ]
+      },
+      {
+        "menu": "Bakat atau ketertarikan khusus",
+        "submenu": [
+          {
+            "group": "-",
+            "list": [
+              "Kreatif",
+              "Ketertarikan pada budaya",
+              "Ketertarikan pada karya tertulis (buku)",
+              "Terampil"
+            ]
+          },
+          {
+            "group": "Tanda-tanda yang menguatkan",
+            "list": [
+              "Ketelitian dan rinci",
+              "Ritmik dan harmonis",
+              "Kesukaan untuk menikmati",
+              "Menikmati perhatian orang"
+            ]
+          }
+        ]
+      },
+      {
+        "menu": "Pola berpikir",
+        "submenu": [
+          {
+            "group": "-",
+            "list": [
+              "Berpikir Analistis",
+              "Berpikir komprehensif",
+              "Berpikir kumulatif",
+              "Berpikir Investigatif atau menyelidik"
+            ]
+          },
+          {
+            "group": "Tanda-tanda yang menguatkan",
+            "list": [
+              "Berpikir terbuka",
+              "Mudah konsentrasi",
+              "Mampu mengambil keputusan",
+              "Detail",
+              "Mengalir",
+              "Orisinil dalam berpikir"
+            ]
+          },
+          {
+            "group": "Tanda-tanda yang melemahan",
+            "list": [
+              "Susah menerima pendapat orang lain",
+              "Ragu",
+              "Berpikir dangkal, terlalu cepat ambil keputusan"
+            ]
+          }
+        ]
+      },
+      {
+        "menu": "Produktifitas",
+        "submenu": [
+          {
+            "group": "-",
+            "list": [
+              "Orientasi pada kegiatan mental/berpikir",
+              "Orientasi pada kegiatan fisik"
+            ]
+          },
+          {
+            "group": "Tanda-tanda yang menguatkan",
+            "list": [
+              "Efisien dan langsung",
+              "Mendominasi",
+              "Punya inisiatif",
+              "Mampu mengorganisir",
+              "Pantang menyerah",
+              "Efisien dan mampu menyederhanakan",
+              "Multi tasking"
+            ]
+          },
+          {
+            "group": "Tanda-tanda yang melemahan",
+            "list": [
+              "Terlalu berhati-hati",
+              "Tidak mampu membuat prioritas",
+              "Suka menunda pekerjaan",
+              "Tidak sabar",
+              "Ceroboh, tidak detail",
+              "Gelisah",
+              "Takut sukses"
+            ]
+          }
+        ]
+      },
+      {
+        "menu": "Ketakutan",
+        "submenu": [
+          {
+            "group": "-",
+            "list": [
+              "Keinginan untuk diperhatikan",
+              "Menyalahkan diri sendiri",
+              "Takut ditolak",
+              "Cemburu, takut persaingan",
+              "Sensitif terhadap kritik",
+              "Pemalu atau penakut"
+            ]
+          }
+        ]
+      },
+      {
+        "menu": "Strategi Bertahan",
+        "submenu": [
+          {
+            "group": "-",
+            "list": [
+              "Suka membual",
+              "Pilih-pilih teman",
+              "Suka berkhayal",
+              "Suka melawan",
+              "Suka menghindar",
+              "Boros",
+              "Mudah marah",
+              "Menekan perasaan",
+              "Jaga image (self control)",
+              "Keras kepala",
+              "Temperamental, mudah frustrasi",
+              "Suka menyombongkan diri",
+              "Menarik diri",
+              "Mudah dipengaruhi orang lain"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,113 @@
+.introduction-container {
+    border-radius: 1rem;
+    border: #90a7c4 0.15rem solid;
+    margin-top: 2rem;
+    user-select: none;
+    background-color: #ebedef;
+    max-width: 56rem;
+    width: 100%;
+
+    .title {
+        font-family: 'Poppins-Regular', sans-serif;
+        color: #496595;
+        font-size: 3rem;
+        text-align: center;
+        line-height: 3.5rem;
+        padding: 2rem 0rem 2rem 0rem;
+    }
+
+    .text {
+        font-family: 'Poppins-Regular', sans-serif;
+        color: #344b52;
+        font-size: 1rem;
+        text-align: justify;
+        line-height: 1.5rem;
+        padding: 1rem 2rem 0rem 2rem;
+    }
+
+    .form-login {
+        margin: auto;
+        width: calc(100% - 4rem);
+
+        .input-group {
+            margin: 1rem 2rem 1.5rem 2rem;
+        }
+
+        .input-group:nth-last-child(-n + 2) {
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group>label,
+        .input-group>input {
+            font-family: 'Poppins-Regular', sans-serif;
+            text-align: left;
+            width: calc(100% - 2rem);
+        }
+
+        .input-group>label {
+            color: #496595;
+            display: inline-block;
+            margin-bottom: 0.3125rem;
+            text-transform: uppercase;
+        }
+
+        .input-group>input {
+            background: #f3f3f3;
+            border-radius: 0.25rem;
+            border: #e2e1da 0.0625rem solid;
+            font-size: 1rem;
+            height: 3rem;
+            outline: 0rem;
+            padding: 0rem 1rem;
+        }
+
+        .input-group>input:focus {
+            background: #fdfbfb;
+            border-color: #d4d0af;
+        }
+
+        .input-group>input::placeholder {
+            color: #d5d5d5;
+            font-size: 1rem;
+        }
+
+        .input-group>input:focus::placeholder {
+            color: #bababa;
+            font-size: 1rem;
+        }
+
+        input:disabled {
+            opacity: 0.5;
+        }
+    }
+
+    .primary {
+        border: none;
+        border-radius: 0.5rem;
+        color: #F7F7F7;
+        font-family: 'Poppins-Medium', sans-serif;
+        font-size: 1.25rem;
+        letter-spacing: 0.0625rem;
+        outline: 0rem;
+        padding: 0.75rem 0rem;
+        background: #90a7c4;
+        cursor: pointer;
+        display: inline-block;
+        margin: 1rem 2rem 3rem 2rem;
+        width: calc(100% - 4rem);
+    }
+
+    .primary:hover {
+        background: #496595;
+    }
+
+    .primary:disabled {
+        opacity: 0.5;
+        background: #a3a3a3 !important;
+        pointer-events: none;
+    }
+}
+
+.introduction-container.hide {
+    display: none;
+}
