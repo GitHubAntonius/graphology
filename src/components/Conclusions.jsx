@@ -8,7 +8,7 @@ import jsPDF from 'jspdf'
 import html2canvas from 'html2canvas'
 
 import imgPDF from '../assets/svg/downloadPDF.svg'
-import imgRTF from '../assets/svg/downloadRTF.svg'
+import imgTXT from '../assets/svg/downloadTXT.svg'
 
 const Conclusions = () => {
     const dispatch = useDispatch()
@@ -20,8 +20,8 @@ const Conclusions = () => {
 
     // Variable
     const pageState = useSelector((state) => state.graphology.pageState)
-    const clientName = useSelector((state) => state.graphology.clientName)
-    const clientAge = useSelector((state) => state.graphology.clientAge)
+    const clientName = useSelector((state) => state.graphology.clientName || 'Graphology Client')
+    const clientAge = useSelector((state) => state.graphology.clientAge || 0)
     const conclusions = useSelector((state) => state.graphology.conclusions)
 
     const [result, setResult] = useState([])
@@ -106,31 +106,32 @@ const Conclusions = () => {
         }
     }
 
-    // Funtio to handle downloading the HTML as an RTF file
-    const handleDownloadRtf = () => {
-        /*
-        const htmlContent = componentRef.current.innerHTML
-        const rtfContent = htmlToRtf.convertHtmlToRtf(htmlContent)
+    // Funtio to handle downloading the HTML as an TXT file
+    const handleDownloadTxt = () => {
+        const divElement = document.getElementById('htmlContent');
+        if (!divElement) return;
 
-        const blob = new Blob([rtfContent], { type: 'application/rtf;charset=utf-8' })
-        const url = window.URL.createObjectURL(blob)
+        const divText = divElement.innerText;
+        const blob = new Blob([divText], { type: 'text/plain' })
+        const url = URL.createObjectURL(blob)
+        const fileName = `Hasil Penilaian ${clientName}.txt`
 
         const link = document.createElement('a')
         link.href = url
-        link.download = 'Hasil Penilaian.rtf'
+        link.download = fileName
         document.body.appendChild(link)
-        link.click()
+        link.click();
 
         // Clean up
         document.body.removeChild(link)
         window.URL.revokeObjectURL(url)
-        */
     }
 
     // Function to handle downloading the HTML as a PDF
     const handleDownloadPdf = () => {
         // Select the content you want to download as PDF
         const content = document.getElementById('htmlContent')
+        const fileName = `Hasil Penilaian ${clientName}.pdf`
 
         // Use html2canvas to capture the content as an image
         html2canvas(content)
@@ -158,7 +159,7 @@ const Conclusions = () => {
                 }
 
                 // Download the PDF
-                pdf.save('Hasil Penilaian.pdf')
+                pdf.save(fileName)
             })
             .catch((err) => {
                 console.error('Failed to generate PDF', err)
@@ -199,24 +200,17 @@ const Conclusions = () => {
         <div className={`result-container${pageState === 'conclusion' ? '' : ' hide'}`}>
             <div id="htmlContent" className="result">
                 <div className="title">HASIL PENILAIAN</div>
-                <div className="information">
-                    <h3>Nama : </h3>
-                    <p>{clientName}</p>
-                </div>
-                <div className="information">
-                    <h3>Usia : </h3>
-                    <p>{clientAge}</p>
-                </div>
+                <p>{`Nama : ${clientName}`}</p>
+                <p>{`Usia : ${clientAge}`}</p>
                 <br></br>
                 {generateConclusions(conclusions)}
-                <br></br>
                 {result[0] ? renderResultPage(result[0][0]) : null}
                 {result.length > 1 && result[1] ? renderResultPage(result[1][0]) : null}
             </div>
             <div className="btn-group">
                 <div className="download">
                     <div className="button-download" onClick={handleDownloadPdf}><img className="icon" src={imgPDF} /></div>
-                    <div className="button-download" onClick={handleDownloadRtf}><img className="icon" src={imgRTF} /></div>
+                    <div className="button-download" onClick={handleDownloadTxt}><img className="icon" src={imgTXT} /></div>
                 </div>
                 <div className="menu">
                     <button className="button-custom" onClick={editThisData}>Edit This Data</button>
