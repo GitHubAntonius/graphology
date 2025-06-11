@@ -1,6 +1,6 @@
 import Home from './pages/Home'
 
-import './stylesheet/abstracts/App.module.scss'
+import "./stylesheet/app.scss"
 import './stylesheet/fonts.scss'
 import './stylesheet/introduction.scss'
 import './stylesheet/custom_form.scss'
@@ -8,10 +8,12 @@ import './stylesheet/conclusions.scss'
 
 function App() {
   return (
-    <div>
+    <div className="web-base">
       <Home />
     </div>
   )
 }
+
+
 
 export default App
