@@ -181,14 +181,62 @@
 
     .data-editor {
         display: flex;
+        height: 1.5rem;
 
-        .btn {
-            padding: 0rem 0.5rem;
+        button {
+            opacity: 0.75;
+            background-color: #04AA6D;
+            border: none;
+            border-radius: 0.25rem;
+            color: white;
+            padding: 0rem 0.75rem;
+            text-decoration: none;
+            cursor: pointer;
         }
 
-        .selector {
-            padding: 0rem 0.5rem;
+        button:hover {
+            opacity: 1;
+        }
+
+        button:disabled {
+            background: #f3f3f3;
+            border-color: #d4d0af;
+            color: #bababa;
+            cursor: not-allowed;
+        }
+
+        .custom-select {
             margin-right: 0.5rem;
+
+            select {
+                width: 100%;
+                height: 100%;
+                border: #99bfd6 0.0625rem solid;
+                border-radius: 0.25rem;
+                vertical-align: middle;
+                background: transparent;
+                -webkit-appearance: none;
+                appearance: none;
+                padding-left: 0.75rem;
+                cursor: pointer;
+            }
+
+            select:disabled {
+                background: #f3f3f3;
+                border-color: #d4d0af;
+                color: #bababa;
+                cursor: not-allowed;
+            }
+
+            :after {
+                position: relative;
+                top: -1.5rem;
+                content: '\f107';
+                font-size: 1rem;
+                color: #a3a3a3;
+                line-height: 1.5rem;
+                padding-right: 0.5rem;
+            }
         }
     }
 

@@ -205,20 +205,22 @@ const CustomForms = () => {
                                                 <div className="text list">{listItem}</div>
                                             </label>
                                             <div className="data-editor">
-                                                <select
-                                                    className="selector"
-                                                    value={selectedValue[`${menuIndex}~${submenuIndex}~${listIndex}`] || 'remove'}
-                                                    onChange={(event) => handleChangeSelect(event, menuIndex, submenuIndex, listIndex)}
-                                                    disabled={!checkedItems[`${menuIndex}~${submenuIndex}~${listIndex}`]}>
-                                                    <option value="remove">Nilai</option>
-                                                    {options.map(opt => (
-                                                        <option key={opt.value} value={opt.value}>
-                                                            {opt.label}
-                                                        </option>
-                                                    ))}
-                                                </select>
+                                                <div className="custom-select">
+                                                    <select
+                                                        value={selectedValue[`${menuIndex}~${submenuIndex}~${listIndex}`] || 'remove'}
+                                                        onChange={(event) => handleChangeSelect(event, menuIndex, submenuIndex, listIndex)}
+                                                        disabled={!checkedItems[`${menuIndex}~${submenuIndex}~${listIndex}`]}>
+                                                        <option value="remove">Nilai</option>
+                                                        {options.map(opt => (
+                                                            <option key={opt.value} value={opt.value}>
+                                                                {opt.label}
+                                                            </option>
+                                                        ))}
+                                                    </select>
+                                                    <span className="icon"></span>
+                                                </div>
                                                 <button
-                                                    className="btn" name={`${menuIndex}~${submenuIndex}~${listIndex}`}
+                                                    name={`${menuIndex}~${submenuIndex}~${listIndex}`}
                                                     onClick={onClickInput}
                                                     disabled={!checkedItems[`${menuIndex}~${submenuIndex}~${listIndex}`] ? true : !selectedValue[`${menuIndex}~${submenuIndex}~${listIndex}`] || selectedValue[`${menuIndex}~${submenuIndex}~${listIndex}`] === 'remove' ? false : true}
                                                 >
