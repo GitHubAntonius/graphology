@@ -504,6 +504,43 @@
             "rendah": {
               "type": "column_ol",
               "text": [
+                "Catatan : Lihat Harga Diri dan Percaya Diri sedang atau tinggi"
+              ]
+            },
+            "sedang": {
+              "type": "column_ol",
+              "text": [
+                "Kadang berpikir dirinya akan gagal.",
+                "Meski tidak terlalu kentara, tapi perasaan 'dirinya rendah' kadang menghantui dirinya."
+              ]
+            },
+            "tinggi": {
+              "type": "column_ol",
+              "text": [
+                "Sangat memandang rendah dirinya.",
+                "Terlalu dihantui kegagalan di masa lalunya, sehingga selalu amat ragu untuk melangkah.",
+                "Menganggap orang lain selalu jauh lebih hebat dari dirinya.",
+                "Selalu merasa was-was bahwa kegagalan akan muncul setiap saat.",
+                "Selalu memilih pekerjaan yang jauh dari kemampuan dirinya.",
+                "Sering merasa kalah sebelum bertindak.",
+                "Penulis cenderung memandang rendah dirinya.",
+                "Selalu merasa tidak setara dengan orang lain.",
+                "Selalu merasa was-was akan ketidak-mampuannya.",
+                "Terobsesi dengan ketidak-sempurnaan dirinya.",
+                "Dalam setiap tindakannya, dia selalu merasa orang lain selalu lebihbaik dan lebih cakap.",
+                "Bekerja pada pekerjaan yang di bawah kompetensinya.",
+                "Sering merasa tidak layak dan tidak bisa bergaul.",
+                "Susah membangun persahabatan, karena dia merasa tidak setara dengan orang lain.",
+                "Membandingkan kejelekan dirinya dengan kebaikan orang lain.",
+                "Selalu menjelek-jelekan dirinya.",
+                "Setiap hari dia merasa orang lain selalu memandang rendah dirinya."
+              ]
+            }
+          },
+          "2": {
+            "rendah": {
+              "type": "column_ol",
+              "text": [
                 "Suka menyalahkan orang lain.",
                 "Bisa memposisikan orang lain pada posisi salah, padahal dialah sebenarnya yang harus bertanggung jawab."
               ]
@@ -530,20 +567,6 @@
                 "Cenderung mensabotase upayanya sendiri, Memerlukan upaya untuk meningkatkan kepercayaan dirinya.",
                 "Suka merusak dirinya sendiri melalui berbagai cara termasuk makan berlebihan, melakukan olah raga yang berbahaya dan merendahkan dirinya di hadapan orang lain."
               ]
-            }
-          },
-          "2": {
-            "rendah": {
-              "type": "column_ol",
-              "text": []
-            },
-            "sedang": {
-              "type": "column_ol",
-              "text": []
-            },
-            "tinggi": {
-              "type": "column_ol",
-              "text": []
             }
           }
         }
